@@ -1,5 +1,5 @@
 // Funciona sin conexión: guarda la app y sus librerías. Los resultados (/selae/, /espn/) siempre van a internet.
-const V = 'app-1794003997';
+const V = 'app-1794004973';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png',
   'lib/qrcode.min.js', 'lib/jsQR.min.js', 'lib/jspdf.umd.min.js', 'lib/zxing.min.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });

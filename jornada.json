@@ -1,0 +1,33 @@
+{
+  "quiniela": {
+    "j": 20, "f": "2026-11-07", "hasta": "2026-11-09",
+    "m": [
+      "Málaga - Racing Santander",
+      "Osasuna - Athletic Club",
+      "Valencia - Real Madrid",
+      "Elche - Betis",
+      "Real Sociedad - Rayo Vallecano",
+      "Celta - Levante",
+      "Villarreal - Getafe",
+      "Cádiz - R. Oviedo",
+      "Girona - Almería",
+      "Sporting - R. Valladolid",
+      "Athletic Club (F) - Real Madrid (F)",
+      "Logroño (F) - Sevilla (F)",
+      "Eibar (F) - Real Sociedad (F)",
+      "Tenerife (F) - Alavés (F)",
+      "At. Madrid - Barcelona"
+    ]
+  },
+  "quinigol": {
+    "j": 21, "f": "2026-11-07", "hasta": "2026-11-09",
+    "m": [
+      "Málaga - Racing Santander",
+      "Osasuna - Athletic Club",
+      "Valencia - Real Madrid",
+      "Celta - Levante",
+      "Villarreal - Getafe",
+      "At. Madrid - Barcelona"
+    ]
+  }
+}

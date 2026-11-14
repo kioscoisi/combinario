@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>¿Tienes tu número de Navidad? · Kiosco Isi</title>
+<meta name="description" content="Escribe tu número de Lotería de Navidad y comprueba si lo tiene disponible el Kiosco Isi de Zamora. Lista actualizada cada mañana.">
+<link rel="icon" type="image/png" href="../app/icon-192.png">
+<link rel="apple-touch-icon" href="../app/icon-180.png">
+<meta name="theme-color" content="#1a1510">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Saira+Extra+Condensed:wght@700;800;900&display=swap">
+<style>
+/* Concepto: el décimo. Papel crema con números grandes tipo lotería; fondo oscuro del kiosco en la cabecera. */
+:root{
+  --bg:#f6f0e1; --surface:#fffdf6; --surface-2:#efe6cf; --ink:#1d1813; --muted:#6b5f48; --gold:#8f6a12;
+  --gold-fill:#e8c24f; --on-gold:#14110f; --line:rgba(29,24,19,.18); --band:#1a1510; --band-ink:#f4ecd8;
+  --ok:#1f6b3a; --ok-bg:#e1f1e4; --no:#8c1d2b; --no-bg:#f6e2e3; --warn-bg:#fbefc9;
+  --font-display:"Saira Extra Condensed","Arial Narrow",Impact,sans-serif;
+  --font-body:"Poppins",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12100e; --surface:#1c1814; --surface-2:#251f19; --ink:#f4ecd8; --muted:#b9ad90; --gold:#e8c24f;
+  --line:rgba(232,194,79,.25); --band:#1c1814; --ok:#7fd49a; --ok-bg:#16301f; --no:#f08a95; --no-bg:#3a181d; --warn-bg:#3a3018; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.5;font-size:16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto}
+.band{background:var(--band);color:var(--band-ink);margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px));padding-block:max(1.6rem,env(safe-area-inset-top)) 1.8rem;background-image:radial-gradient(90% 140% at 10% 0%,rgba(232,194,79,.18),transparent 60%)}
+.k{font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#e8c24f;margin:0 0 .5rem}
+h1{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(2.5rem,10vw,4rem);line-height:.95;margin:0;color:#f1d77a;text-wrap:balance}
+.band p.s{margin:.7rem 0 0;color:#e7dcc0;max-width:44ch}
+main{padding-block:1.4rem 2rem}
+label{display:block;font-weight:600;font-size:.88rem;margin:0 0 .35rem;color:var(--muted)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fields .full{grid-column:1/-1}
+input{width:100%;font:900 2.4rem/1.1 var(--font-display);letter-spacing:.14em;text-align:center;padding:.55rem .4rem;border-radius:12px;border:2px solid var(--line);background:var(--surface);color:var(--ink)}
+input::placeholder{color:var(--muted);opacity:.45}
+input:focus{outline:3px solid var(--gold-fill);outline-offset:2px;border-color:var(--gold)}
+input:disabled{opacity:.5}
+.hint{font-size:.8rem;color:var(--muted);margin:.35rem 0 0}
+#res{margin-top:1.2rem}
+.big{border-radius:16px;padding:1.1rem 1.2rem;border:2px solid;display:flex;gap:.9rem;align-items:center}
+.big .ic{flex:none;width:3rem;height:3rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;font-weight:900}
+.big.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}.big.ok .ic{background:var(--ok);color:var(--ok-bg)}
+.big.no{background:var(--no-bg);border-color:var(--no);color:var(--no)}.big.no .ic{background:var(--no);color:var(--no-bg)}
+.big b{display:block;font-family:var(--font-display);font-weight:900;font-size:2.1rem;line-height:1;letter-spacing:.08em}
+.big span.t{font-weight:600;font-size:.98rem;color:var(--ink)}
+.count{font-weight:600;margin:1.1rem 0 .6rem}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(5.6rem,1fr));gap:8px;padding:0;margin:0;list-style:none}
+.chips li button{width:100%;font:800 1.45rem/1 var(--font-display);letter-spacing:.1em;padding:.6rem .2rem;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+.chips li button:hover{border-color:var(--gold);color:var(--gold)}
+.more{margin-top:1rem;font:700 .95rem var(--font-body);padding:.7rem 1.3rem;border-radius:999px;border:2px solid var(--gold);background:none;color:var(--gold);cursor:pointer}
+:focus-visible{outline:3px solid var(--gold-fill);outline-offset:3px}
+.aviso{margin:0 0 1rem;padding:.8rem 1rem;border-radius:12px;background:var(--warn-bg);border:1px solid var(--line);font-size:.92rem}
+.aviso[hidden]{display:none}
+.contact{margin-top:2rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem}
+.contact p{margin:.15rem 0}
+.contact .tel{font-family:var(--font-display);font-weight:900;font-size:1.9rem;letter-spacing:.04em;color:var(--gold)}
+.contact .tel a{color:inherit;text-decoration:none}
+.fine{font-size:.8rem;color:var(--muted);margin-top:1.2rem}
+@media(max-width:420px){input{font-size:2rem}.big b{font-size:1.8rem}}
+</style>
+</head>
+<body>
+<div class="band"><div class="wrap">
+  <p class="k">Kiosco Isi · Zamora · Receptor 91300</p>
+  <h1 id="tit">¿Tienes tu número de Navidad?</h1>
+  <p class="s">Escribe tu número y te decimos si lo tenemos disponible en el kiosco.</p>
+</div></div>
+
+<main><div class="wrap">
+  <p class="aviso" id="aviso" hidden></p>
+  <div class="fields">
+    <div class="full">
+      <label for="q">Tu número (5 cifras)</label>
+      <input id="q" type="text" inputmode="numeric" autocomplete="off" maxlength="5" placeholder="00000" aria-describedby="h1" disabled>
+      <p class="hint" id="h1">Si escribes solo las primeras cifras, verás todos los que empiezan así.</p>
+    </div>
+    <div class="full">
+      <label for="e">¿Termina en…? (opcional)</label>
+      <input id="e" type="text" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="00" style="font-size:1.8rem" disabled>
+    </div>
+  </div>
+  <div id="res" aria-live="polite"></div>
+  <div class="count" id="count">Cargando la lista del kiosco…</div>
+  <ul class="chips" id="list"></ul>
+  <button class="more" id="more" type="button" hidden>Mostrar más</button>
+
+  <div class="contact">
+    <p><strong>Kiosco Isi · Loterías y Apuestas del Estado</strong></p>
+    <p>Av. del Príncipe de Asturias, 29 · Zamora</p>
+    <p class="tel"><a href="tel:+34685251754">685 251 754</a></p>
+  </div>
+  <p class="fine" id="stamp"></p>
+  <p class="fine">Información orientativa: la disponibilidad puede cambiar si se vende un número, confirma el tuyo en el kiosco. Esta página no es de Loterías y Apuestas del Estado. Juega con responsabilidad. Solo mayores de 18 años.</p>
+</div></main>
+
+<script>
+// La lista sale de combinario.es/listas/AAAAnnn.json (se publica sola cada mañana):
+// "b" = base64 de 12.500 bytes, el bit (n & 7) del byte (n >> 3) indica que el número n está disponible.
+var SORTEO=(new URLSearchParams(location.search).get("s")||"2026102").replace(/\D/g,"");
+var N=[],SET={},cur=[],shown=0,PAGE=120;
+var q=document.getElementById("q"),e=document.getElementById("e"),res=document.getElementById("res"),
+    cnt=document.getElementById("count"),list=document.getElementById("list"),more=document.getElementById("more"),
+    aviso=document.getElementById("aviso");
+
+function fechaLarga(iso){
+  var d=new Date(iso);if(isNaN(d))return iso;
+  return d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long",timeZone:"Europe/Madrid"})+
+    " a las "+d.toLocaleTimeString("es-ES",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Madrid"});
+}
+function cargar(){
+  fetch("../listas/"+SORTEO+".json?t="+Date.now(),{cache:"no-store"}).then(function(r){
+    if(!r.ok)throw new Error(r.status);return r.json();
+  }).then(function(d){
+    var bin=atob(d.b);
+    for(var n=0;n<100000;n++){if(bin.charCodeAt(n>>3)>>(n&7)&1){var s=("0000"+n).slice(-5);N.push(s);SET[s]=1;}}
+    if(SORTEO!=="2026102"){
+      var f=new Date(d.sorteo+"T12:00:00");
+      document.getElementById("tit").textContent="¿Tienes tu número del sorteo del "+f.toLocaleDateString("es-ES",{day:"numeric",month:"long"})+"?";
+    }
+    document.getElementById("stamp").textContent="Lista del kiosco actualizada el "+fechaLarga(d.act)+": "+
+      N.length.toLocaleString("es-ES")+" números disponibles.";
+    var horas=(Date.now()-new Date(d.act).getTime())/36e5;
+    if(horas>48){aviso.hidden=false;aviso.textContent="Ojo: esta lista es del "+fechaLarga(d.act)+". Puede que algún número ya se haya vendido; confírmalo en el kiosco.";}
+    q.disabled=false;e.disabled=false;render();
+  }).catch(function(){
+    cnt.textContent="";aviso.hidden=false;
+    aviso.textContent="Ahora mismo no podemos cargar la lista de números. Llámanos o pásate por el kiosco y te lo miramos.";
+  });
+}
+function digits(s){return s.replace(/\D/g,"")}
+function render(){
+  var a=digits(q.value),b=digits(e.value);
+  q.value=a;e.value=b;
+  res.innerHTML="";list.innerHTML="";cnt.innerHTML="";more.hidden=true;
+  if(a.length===5){
+    var ok=!!SET[a];
+    var d=document.createElement("div");d.className="big "+(ok?"ok":"no");
+    d.innerHTML='<div class="ic" aria-hidden="true">'+(ok?"✓":"✕")+'</div><div><b></b><span class="t"></span></div>';
+    d.querySelector("b").textContent=a;
+    d.querySelector(".t").textContent=ok?"Disponible en el kiosco":"No lo tenemos disponible";
+    res.appendChild(d);
+    if(!ok){
+      var n=parseInt(a,10);
+      cur=N.map(function(x){return [Math.abs(parseInt(x,10)-n),x]}).sort(function(p,r){return p[0]-r[0]}).slice(0,12).map(function(p){return p[1]}).sort();
+      cnt.textContent=cur.length?"Números parecidos que sí tenemos":"";
+    }else{cur=[];}
+    fill();return;
+  }
+  if(!a&&!b){cur=[];cnt.textContent="Escribe un número o su terminación para buscar.";return}
+  cur=N.filter(function(x){return (!a||x.indexOf(a)===0)&&(!b||x.slice(-b.length)===b)});
+  cnt.innerHTML=cur.length?('<b>'+cur.length.toLocaleString("es-ES")+'</b> '+(cur.length===1?'número disponible':'números disponibles')):'No tenemos ningún número así. Prueba con menos cifras.';
+  fill();
+}
+function fill(){shown=0;list.innerHTML="";add();}
+function add(){
+  var end=Math.min(cur.length,shown+PAGE);
+  for(var i=shown;i<end;i++){
+    var li=document.createElement("li"),bt=document.createElement("button");bt.type="button";bt.textContent=cur[i];
+    bt.addEventListener("click",function(ev){q.value=ev.currentTarget.textContent;render();window.scrollTo({top:0,behavior:"smooth"})});
+    li.appendChild(bt);list.appendChild(li);
+  }
+  shown=end;more.hidden=!(shown<cur.length);
+}
+more.addEventListener("click",add);
+q.addEventListener("input",render);e.addEventListener("input",render);
+cargar();
+</script>
+</body>
+</html>

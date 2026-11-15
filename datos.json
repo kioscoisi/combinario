@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-15T12:45+01:00",
+ "actualizado": "2026-11-15T18:31+01:00",
  "fuente": "Loterías y Apuestas del Estado (web oficial, leída desde el navegador del punto de venta)",
  "botes": {
   "primitiva": {
@@ -35,8 +35,8 @@
    "f": "2026-11-17"
   },
   "quintuple": {
-   "n": 4000,
-   "f": "2026-11-15"
+   "n": 9000,
+   "f": "2026-11-22"
   }
  },
  "res": {
@@ -13405,6 +13405,41 @@
    }
   ],
   "quintuple": [
+   {
+    "ymd": "2026-11-15",
+    "j": null,
+    "s": [
+     "6",
+     "2",
+     "7",
+     "6",
+     "6",
+     "1"
+    ],
+    "m": [],
+    "prem": [
+     {
+      "t": "Especial (1 solo resguardo de 1ª Cat)",
+      "p": 0
+     },
+     {
+      "t": "1ª (5 Caballos Gan+2º de 5ªCarrera)",
+      "p": 0
+     },
+     {
+      "t": "2ª (5 Caballos Ganadores)",
+      "p": 0
+     },
+     {
+      "t": "3ª (4 Caballos Gan+2º de 5ªCarrera)",
+      "p": 148.57
+     },
+     {
+      "t": "4ª (4 Caballos Ganadores)",
+      "p": 82.54
+     }
+    ]
+   },
    {
     "ymd": "2026-11-12",
     "j": null,

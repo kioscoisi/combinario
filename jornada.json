@@ -1,94 +1,42 @@
 {
  "quiniela": {
-  "j": 21,
-  "f": "2026-11-15",
-  "hasta": "2026-11-15",
+  "j": 22,
+  "f": "2026-11-18",
+  "hasta": "2026-11-18",
   "m": [
-   "R. Valladolid - Castellón",
-   "Real Sociedad B - Sporting",
-   "Almería - Andorra",
-   "Mallorca - Córdoba",
-   "R. Oviedo - Girona",
-   "Tenerife - Ceuta",
-   "Granada - Las Palmas",
-   "Eibar - Cádiz",
-   "Eldense - Sabadell",
-   "Bélgica - Italia",
-   "Alavés (F) - Eibar (F)",
-   "Real Sociedad (F) - Athletic Club (F)",
-   "Sevilla (F) - At. Madrid (F)",
-   "Valencia (F) - Granada (F)",
-   "España - Inglaterra"
+   "Bosnia Herzegovina - Rumanía",
+   "Ucrania - Georgia",
+   "Gales - Portugal",
+   "Hungría - Irlanda Del Norte",
+   "Polonia - Suecia",
+   "República De Irlanda - Kosovo",
+   "Real Madrid (F) - Inter De Milán (F)",
+   "Hacken (F) - Manchester City (F)",
+   "Chelsea (F) - Psg (F)",
+   "Juventus (F) - Leuven (F)",
+   "Austria De Viena (F) - Bayern De Múnich (F)",
+   "Arsenal (F) - Ol Lyonnes (F)",
+   "Barcelona (F) - Servette (F)",
+   "Benfica (F) - Roma (F)",
+   "Dinamarca - Noruega"
   ],
-  "pct": {
-   "f": "2026-11-14",
-   "p": [
-    [28,25,47],
-    [26,27,47],
-    [84,9,7],
-    [74,16,10],
-    [44,32,24],
-    [78,13,9],
-    [55,27,18],
-    [75,15,10],
-    [39,37,24],
-    [40,28,32],
-    [35,34,31],
-    [39,34,27],
-    [12,15,73],
-    [38,25,37]
-   ],
-   "pl": [
-    [3,19,53,25],
-    [12,54,26,8]
-   ]
-  },
   "rec": {
-   "j": 20,
-   "f": "2026-11-08",
-   "v": 3378712.5
+   "j": 19,
+   "f": "2026-11-04",
+   "v": 1126802.25
   }
  },
  "quinigol": {
-  "j": 23,
-  "f": "2026-11-15",
-  "hasta": "2026-11-15",
+  "j": 24,
+  "f": "2026-11-17",
+  "hasta": "2026-11-17",
   "m": [
-   "R. Valladolid - Castellón",
-   "Almería - Andorra",
-   "R. Oviedo - Girona",
-   "Granada - Las Palmas",
-   "Eldense - Sabadell",
-   "España - Inglaterra"
-  ],
-  "pct": {
-   "f": "2026-11-14",
-   "p": [
-    [
-     [18,50,24,8],
-     [14,37,35,14]
-    ],
-    [
-     [7,16,39,38],
-     [43,42,11,4]
-    ],
-    [
-     [13,45,32,10],
-     [21,49,22,8]
-    ],
-    [
-     [11,38,40,11],
-     [25,50,19,6]
-    ],
-    [
-     [20,48,25,7],
-     [30,46,19,5]
-    ],
-    [
-     [7,23,42,28],
-     [16,46,28,10]
-    ]
-   ]
-  }
+   "Bosnia Herzegovina - Rumanía",
+   "Ucrania - Georgia",
+   "Gales - Portugal",
+   "Hungría - Irlanda Del Norte",
+   "Polonia - Suecia",
+   "Dinamarca - Noruega"
+  ]
  }
 }

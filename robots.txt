@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /descargas/
+Disallow: /listas/
+Disallow: /historico/
+
+Sitemap: https://combinario.es/sitemap.xml

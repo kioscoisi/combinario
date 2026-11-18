@@ -1,6 +1,6 @@
 {
-  "name": "Combi",
-  "short_name": "Combi",
+  "name": "Combinario",
+  "short_name": "Combinario",
   "description": "Prepara jugadas, reducidas y quinielas, y comprueba tus premios.",
   "lang": "es",
   "start_url": "./",

@@ -8,9 +8,7 @@
 <link rel="icon" type="image/png" href="../app/icon-192.png">
 <link rel="apple-touch-icon" href="../app/icon-180.png">
 <meta name="theme-color" content="#1a1510">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Saira+Extra+Condensed:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="../fuentes/fuentes.css">
 <style>
 /* Concepto: el décimo. Papel crema con números grandes tipo lotería; fondo oscuro del kiosco en la cabecera. */
 :root{
@@ -64,11 +62,11 @@ input:disabled{opacity:.5}
 </style>
 </head>
 <body>
-<div class="band"><div class="wrap">
+<header class="band"><div class="wrap">
   <p class="k">Kiosco Isi · Zamora · Receptor 91300</p>
   <h1 id="tit">¿Tienes tu número de Navidad?</h1>
   <p class="s">Escribe tu número y te decimos si lo tenemos disponible en el kiosco.</p>
-</div></div>
+</div></header>
 
 <main><div class="wrap">
   <p class="aviso" id="aviso" hidden></p>
@@ -95,6 +93,8 @@ input:disabled{opacity:.5}
   </div>
   <p class="fine" id="stamp"></p>
   <p class="fine">Información orientativa: la disponibilidad puede cambiar si se vende un número, confirma el tuyo en el kiosco. Esta página no es de Loterías y Apuestas del Estado. Juega con responsabilidad. Solo mayores de 18 años.</p>
+  <p class="fine"><b>La ludopatía es un riesgo del juego. Solo para mayores de 18 años.</b> <a href="https://www.juegoseguro.es">www.juegoseguro.es</a></p>
+  <p class="fine"><a href="../legal/aviso-legal.html">Aviso legal</a> · <a href="../legal/privacidad.html">Privacidad</a> · <a href="../legal/cookies.html">Cookies</a> · <a href="../legal/condiciones.html">Condiciones de uso</a></p>
 </div></main>
 
 <script>

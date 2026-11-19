@@ -48,3 +48,9 @@ footer .legal{border-top:1px solid var(--line);padding-top:14px}
 .tw td{white-space:nowrap}
 td.n{text-align:right;white-space:nowrap}
 .nota{font-size:14px;color:var(--muted)}
+.legnav{list-style:none;padding:0;margin:0 0 6px;display:flex;flex-wrap:wrap;gap:6px}
+.legnav a{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;background:var(--card)}
+.legnav a[aria-current=page]{background:var(--brand);color:#fff;border-color:var(--brand)}
+mark{background:#FFE08A;color:#1F2420;padding:0 3px;border-radius:3px}
+th[scope=row]{background:transparent;color:var(--fg);width:34%}
+.tw:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}

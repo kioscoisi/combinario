@@ -1,94 +1,42 @@
 {
  "quiniela": {
-  "j": 23,
-  "f": "2026-11-22",
-  "hasta": "2026-11-22",
+  "j": 24,
+  "f": "2026-11-25",
+  "hasta": "2026-11-25",
   "m": [
-   "Alavés - Deportivo",
-   "Rayo Vallecano - Valencia",
-   "Real Madrid - Celta",
-   "Barcelona - Villarreal",
-   "Racing Santander - Real Sociedad",
-   "Osasuna - Málaga",
-   "Getafe - At. Madrid",
-   "Tenerife - Mallorca",
-   "Sporting - Las Palmas",
-   "Girona - Eibar",
-   "Eibar (F) - At. Madrid (F)",
-   "Granada (F) - Real Madrid (F)",
-   "Real Sociedad (F) - Sevilla (F)",
-   "Tenerife (F) - Madrid Cff (F)",
-   "Sevilla - Betis"
+   "Arsenal - Borussia Dortmund",
+   "Feyenoord - Oporto",
+   "Manchester City - Nápoles",
+   "Real Madrid - Psv",
+   "Slovan Bratislava - Betis",
+   "Sabah - Barcelona",
+   "Slavia Praga - Villarreal",
+   "Brujas - Liverpool",
+   "Inter De Milán - Stuttgart",
+   "Psg - Roma",
+   "Shakhtar D. - Fenerbahçe",
+   "Sporting De Portugal - Manchester United",
+   "Celta - Bournemouth",
+   "Crystal Palace - Real Sociedad",
+   "At. Madrid - Viking Fk"
   ],
-  "pct": {
-   "f": "2026-11-21",
-   "p": [
-    [42,35,23],
-    [46,31,23],
-    [92,5,3],
-    [88,7,5],
-    [19,31,50],
-    [72,18,10],
-    [7,16,77],
-    [28,36,36],
-    [49,31,20],
-    [61,26,13],
-    [9,14,77],
-    [6,7,87],
-    [69,21,10],
-    [46,29,25]
-   ],
-   "pl": [
-    [7,58,31,4],
-    [5,35,47,13]
-   ]
-  },
   "rec": {
-   "j": 21,
-   "f": "2026-11-15",
-   "v": 1586225.25
+   "j": 22,
+   "f": "2026-11-18",
+   "v": 621900.75
   }
  },
  "quinigol": {
-  "j": 25,
-  "f": "2026-11-22",
-  "hasta": "2026-11-22",
+  "j": 26,
+  "f": "2026-11-25",
+  "hasta": "2026-11-25",
   "m": [
-   "Alavés - Deportivo",
-   "Real Madrid - Celta",
-   "Barcelona - Villarreal",
-   "Racing Santander - Real Sociedad",
-   "Getafe - At. Madrid",
-   "Sevilla - Betis"
-  ],
-  "pct": {
-   "f": "2026-11-21",
-   "p": [
-    [
-     [16,51,27,6],
-     [23,50,21,6]
-    ],
-    [
-     [3,6,21,70],
-     [51,40,7,2]
-    ],
-    [
-     [3,7,22,68],
-     [29,50,17,4]
-    ],
-    [
-     [19,54,23,4],
-     [10,36,41,13]
-    ],
-    [
-     [51,39,7,3],
-     [7,28,45,20]
-    ],
-    [
-     [12,53,29,6],
-     [10,41,37,12]
-    ]
-   ]
-  }
+   "Real Madrid - Psv",
+   "Slovan Bratislava - Betis",
+   "Sabah - Barcelona",
+   "Slavia Praga - Villarreal",
+   "Celta - Bournemouth",
+   "At. Madrid - Viking Fk"
+  ]
  }
 }

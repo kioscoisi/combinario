@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T09:05+01:00",
+ "actualizado": "2026-11-25T22:05+01:00",
  "fuente": "Loterías y Apuestas del Estado (web oficial, leída desde el navegador del punto de venta)",
  "botes": {
   "primitiva": {
@@ -7,8 +7,8 @@
    "f": "2026-11-26"
   },
   "bonoloto": {
-   "n": 1800000,
-   "f": "2026-11-25"
+   "n": 0,
+   "f": "2026-11-26"
   },
   "euromillones": {
    "n": 59000000,
@@ -1935,6 +1935,46 @@
    }
   ],
   "bonoloto": [
+   {
+    "ymd": "2026-11-25",
+    "main": [
+     1,
+     2,
+     13,
+     35,
+     39,
+     41
+    ],
+    "comp": 46,
+    "reint": 0,
+    "x": [],
+    "prem": [
+     {
+      "t": "1ª (6 Aciertos)",
+      "p": 2008996.62
+     },
+     {
+      "t": "2ª (5 Aciertos + C)",
+      "p": 94232.45
+     },
+     {
+      "t": "3ª (5 Aciertos)",
+      "p": 1013.25
+     },
+     {
+      "t": "4ª (4 Aciertos)",
+      "p": 29.65
+     },
+     {
+      "t": "5ª (3 Aciertos)",
+      "p": 4
+     },
+     {
+      "t": "Reintegro",
+      "p": 0.5
+     }
+    ]
+   },
    {
     "ymd": "2026-11-24",
     "main": [

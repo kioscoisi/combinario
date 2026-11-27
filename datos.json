@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-26T22:00+01:00",
+ "actualizado": "2026-11-27T09:47+01:00",
  "fuente": "Loterías y Apuestas del Estado (web oficial, leída desde el navegador del punto de venta)",
  "botes": {
   "primitiva": {
-   "n": 0,
+   "n": 4900000,
    "f": "2026-11-28"
   },
   "bonoloto": {
@@ -54,7 +54,36 @@
     "comp": 6,
     "reint": 2,
     "x": [],
-    "prem": []
+    "prem": [
+     {
+      "t": "Especial (6 Aciertos + R)",
+      "p": 0
+     },
+     {
+      "t": "1ª (6 Aciertos)",
+      "p": 1140923.77
+     },
+     {
+      "t": "2ª (5 Aciertos + C)",
+      "p": 37002.93
+     },
+     {
+      "t": "3ª (5 Aciertos)",
+      "p": 2031.1
+     },
+     {
+      "t": "4ª (4 Aciertos)",
+      "p": 47.4
+     },
+     {
+      "t": "5ª (3 Aciertos)",
+      "p": 8
+     },
+     {
+      "t": "Reintegro",
+      "p": 1
+     }
+    ]
    },
    {
     "ymd": "2026-11-23",
@@ -11039,6 +11068,130 @@
  "resq": {
   "quiniela": [
    {
+    "ymd": "2026-11-25",
+    "j": 24,
+    "s": [
+     "X",
+     "2",
+     "X",
+     "1",
+     "2",
+     "2",
+     "2",
+     "2",
+     "1",
+     "X",
+     "2",
+     "X",
+     "2",
+     "1",
+     "2-0"
+    ],
+    "m": [
+     [
+      "Arsenal",
+      "Borussia Dortmund",
+      "1-1"
+     ],
+     [
+      "Feyenoord",
+      "Oporto",
+      "0-1"
+     ],
+     [
+      "Manchester City",
+      "Nápoles",
+      "2-2"
+     ],
+     [
+      "Real Madrid",
+      "Psv",
+      "5-1"
+     ],
+     [
+      "Slovan Bratislava",
+      "Betis",
+      "0-2"
+     ],
+     [
+      "Sabah",
+      "Barcelona",
+      "1-4"
+     ],
+     [
+      "Slavia Praga",
+      "Villarreal",
+      "0-1"
+     ],
+     [
+      "Brujas",
+      "Liverpool",
+      "0-3"
+     ],
+     [
+      "Inter De Milán",
+      "Stuttgart",
+      "2-0"
+     ],
+     [
+      "Psg",
+      "Roma",
+      "2-2"
+     ],
+     [
+      "Shakhtar D.",
+      "Fenerbahçe",
+      "0-1"
+     ],
+     [
+      "Sporting De Portugal",
+      "Manchester United",
+      "2-2"
+     ],
+     [
+      "Celta",
+      "Bournemouth",
+      "1-2"
+     ],
+     [
+      "Crystal Palace",
+      "Real Sociedad",
+      "2-1"
+     ],
+     [
+      "At. Madrid",
+      "Viking Fk",
+      "2-0"
+     ]
+    ],
+    "prem": [
+     {
+      "t": "Pleno al 15",
+      "p": 78930.45
+     },
+     {
+      "t": "1ª (14 Aciertos)",
+      "p": 15307.72
+     },
+     {
+      "t": "2ª (13 Aciertos)",
+      "p": 536.94
+     },
+     {
+      "t": "3ª (12 Aciertos)",
+      "p": 54.89
+     },
+     {
+      "t": "4ª (11 Aciertos)",
+      "p": 7.81
+     },
+     {
+      "t": "5ª (10 Aciertos)",
+      "p": 1.83
+     }
+    ]
+   },
+   {
     "ymd": "2026-11-22",
     "j": 23,
     "s": [
@@ -14648,6 +14801,14 @@
    "c": "2026-12-10 20:30"
   },
   {
+   "f": "2026-12-12",
+   "n": "100",
+   "nom": "SORTEO DE LOTERÍA NACIONAL",
+   "p": 6,
+   "a": "2026-11-29 00:00",
+   "c": "2026-12-12 12:30"
+  },
+  {
    "f": "2026-12-22",
    "n": "102",
    "nom": "SORTEO EXTRAORDINARIO DE NAVIDAD",
@@ -14667,10 +14828,6 @@
  "cierres": {
   "primitiva": [
    {
-    "f": "2026-11-26",
-    "c": "2026-11-26 21:15"
-   },
-   {
     "f": "2026-11-28",
     "c": "2026-11-28 21:15"
    },
@@ -14689,12 +14846,12 @@
   ],
   "bonoloto": [
    {
-    "f": "2026-11-26",
-    "c": "2026-11-26 21:00"
-   },
-   {
     "f": "2026-11-27",
     "c": "2026-11-27 21:00"
+   },
+   {
+    "f": "2026-11-28",
+    "c": "2026-11-28 21:00"
    },
    {
     "f": "2026-11-30",
@@ -14738,10 +14895,6 @@
    }
   ],
   "eurodreams": [
-   {
-    "f": "2026-11-26",
-    "c": "2026-11-26 20:30"
-   },
    {
     "f": "2026-11-30",
     "c": "2026-11-30 20:30"

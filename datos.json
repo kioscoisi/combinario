@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T07:59+01:00",
+ "actualizado": "2026-11-28T14:35+01:00",
  "fuente": "Loterías y Apuestas del Estado (web oficial, leída desde el navegador del punto de venta)",
  "botes": {
   "primitiva": {
@@ -14952,14 +14952,6 @@
   ]
  },
  "lnac": [
-  {
-   "f": "2026-11-28",
-   "n": "096",
-   "nom": "SORTEO DE LOTERÍA NACIONAL",
-   "p": 6,
-   "a": "2026-11-15 00:00",
-   "c": "2026-11-28 12:30"
-  },
   {
    "f": "2026-12-03",
    "n": "097",
